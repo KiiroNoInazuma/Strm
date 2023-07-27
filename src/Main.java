@@ -13,7 +13,7 @@ public class Main {
         T min = list.stream().min(order).orElse(null);
         T max = list.stream().max(order).orElse(null);
         minMaxConsumer.accept(min, max);
-        System.out.println("Все значения списка: " +
+        System.out.println("Р’СЃРµ Р·РЅР°С‡РµРЅРёСЏ СЃРїРёСЃРєР°: " +
                 list.stream()
                         .map(Object::toString)
                         .collect(Collectors.joining(",")));
@@ -37,9 +37,9 @@ public class Main {
 //-----------------------------------------------------------------------------------------------------------------//
         System.out.println("--------------------------------------------------------------------------------\nTask_2\n");
         int[] num = {4, 2, 5, 7, 3, 7, 3, 7, 4, 7};
-        System.out.println("Всего четных чисел:");
+        System.out.println("Р’СЃРµРіРѕ С‡РµС‚РЅС‹С… С‡РёСЃРµР»:");
         System.out.println(even(num).count());
-        System.out.println("Все четные числа из списка:");
+        System.out.println("Р’СЃРµ С‡РµС‚РЅС‹Рµ С‡РёСЃР»Р° РёР· СЃРїРёСЃРєР°:");
         even(num).forEach(System.out::println);
     }
 }
