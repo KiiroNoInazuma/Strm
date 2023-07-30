@@ -15,6 +15,7 @@ public class Main {
         T max = list.stream().max(order).orElse(null);
         minMaxConsumer.accept(min, max);*/
 
+
         if (list.isEmpty()) {
             minMaxConsumer.accept(null, null);
         } else {
